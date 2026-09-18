@@ -1,0 +1,51 @@
+=== Stage 1: threshold grid ===
+  stage1 20/245 (7s elapsed)
+  stage1 40/245 (14s elapsed)
+  stage1 60/245 (20s elapsed)
+  stage1 80/245 (27s elapsed)
+  stage1 100/245 (33s elapsed)
+  stage1 120/245 (40s elapsed)
+  stage1 140/245 (46s elapsed)
+  stage1 160/245 (54s elapsed)
+  stage1 180/245 (61s elapsed)
+  stage1 200/245 (68s elapsed)
+  stage1 220/245 (76s elapsed)
+  stage1 240/245 (83s elapsed)
+stage1: 245 total, 245 with enough trades, 177 min_sharpe>0
+
+Top 5 stage1 threshold combos:
+      low_q  high_q  mid_q  n_trades  is_sharpe  oos_sharpe  min_sharpe
+0     0.01     0.7   0.40       764   0.635583    0.766922    0.635583
+1     0.01     0.7   0.45       776   0.598434    0.993709    0.598434
+11    0.01     0.9   0.45       489   0.586101    1.020115    0.586101
+106   0.08     0.7   0.45       918   0.571078    1.068035    0.571078
+105   0.08     0.7   0.40       910   0.565241    0.942482    0.565241
+
+=== Stage 2: full cross ===
+stage2: 2400 combos
+  stage2 200/2400 (66s elapsed)
+  stage2 400/2400 (150s elapsed)
+  stage2 600/2400 (232s elapsed)
+  stage2 800/2400 (311s elapsed)
+  stage2 1000/2400 (387s elapsed)
+  stage2 1200/2400 (453s elapsed)
+  stage2 1400/2400 (523s elapsed)
+  stage2 1600/2400 (597s elapsed)
+  stage2 1800/2400 (679s elapsed)
+  stage2 2000/2400 (761s elapsed)
+  stage2 2200/2400 (841s elapsed)
+  stage2 2400/2400 (931s elapsed)
+stage2: 2400 total, 2400 with enough trades, 1379 min_sharpe>0
+
+Top 10 stage2 combos:
+       low_q  high_q  mid_q  adx_threshold  atr_stop_multiple  beta_window  pct_lookback  max_hold_bars  n_trades  n_is  n_oos  is_sharpe  oos_sharpe  min_sharpe
+1685   0.08     0.7   0.45           25.0               15.0          100          2500            300      1270  1072    198   0.813458    1.094404    0.813458
+1709   0.08     0.7   0.45           25.0               20.0          100          2500            300      1261  1065    196   0.800630    1.058255    0.800630
+725    0.01     0.7   0.45           25.0               15.0          100          2500            300       998   844    154   0.786637    1.174394    0.786637
+820    0.01     0.7   0.45           30.0               15.0          100          2500            150      1188  1008    180   0.766133    0.768077    0.766133
+821    0.01     0.7   0.45           30.0               15.0          100          2500            300      1056   891    165   0.755128    0.864937    0.755128
+1660   0.08     0.7   0.45           25.0               10.0          100          2500            150      1443  1228    215   0.737583    1.194306    0.737583
+1661   0.08     0.7   0.45           25.0               10.0          100          2500            300      1306  1103    203   0.732690    1.164579    0.732690
+1708   0.08     0.7   0.45           25.0               20.0          100          2500            150      1406  1196    210   0.727858    1.029948    0.727858
+1684   0.08     0.7   0.45           25.0               15.0          100          2500            150      1412  1201    211   0.724235    1.053879    0.724235
+1307   0.01     0.9   0.45           30.0               15.0          200          2500            300       423   355     68   0.722221    0.734348    0.722221

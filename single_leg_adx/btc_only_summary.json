@@ -1,0 +1,184 @@
+{
+  "strategy": "btc_only",
+  "params": {
+    "beta_window": 100,
+    "pct_lookback": 2500,
+    "low_q": 0.08,
+    "high_q": 0.7,
+    "mid_q": 0.45,
+    "max_hold_bars": 300,
+    "adx_window": 14,
+    "adx_threshold": 25.0,
+    "stop_mode": "atr",
+    "atr_window": 14,
+    "atr_stop_multiple": 15.0,
+    "fixed_stop_pct": 0.003
+  },
+  "cost_basis": "ibkr",
+  "mean_cost_r": 0.03202464494691432,
+  "oos_split_date": "2025-09-14",
+  "blocks": [
+    {
+      "label": "full",
+      "n_trades": 1270,
+      "hit_rate_gross": 0.5283464566929134,
+      "hit_rate_after_cost": 0.4905511811023622,
+      "expectancy_r_gross": 0.07268890472372941,
+      "expectancy_r_after_cost": 0.04066425977681509,
+      "net_return_per_trade_usd_after_cost": 20.332129888407547,
+      "payoff_ratio_after_cost": 1.2924795582981736,
+      "avg_win_r_after_cost": 0.4218842041064368,
+      "avg_loss_r_after_cost": -0.3264146047013214,
+      "sharpe_365d_after_cost": 0.8548342046531341,
+      "calmar_after_cost": 0.6475165260330837,
+      "max_drawdown_pct_after_cost": 0.05531623377420315,
+      "max_drawdown_duration_bars_after_cost": 302,
+      "ending_equity_usd": 125821.80495827761
+    },
+    {
+      "label": "in_sample",
+      "n_trades": 1072,
+      "hit_rate_gross": 0.5289179104477612,
+      "hit_rate_after_cost": 0.48507462686567165,
+      "expectancy_r_gross": 0.07259954735046045,
+      "expectancy_r_after_cost": 0.03790176845925733,
+      "net_return_per_trade_usd_after_cost": 18.950884229628663,
+      "payoff_ratio_after_cost": 1.3085317698213872,
+      "avg_win_r_after_cost": 0.4139520141299085,
+      "avg_loss_r_after_cost": -0.316348462969617,
+      "sharpe_365d_after_cost": 0.8134576455948644,
+      "calmar_after_cost": 0.6151119694501015,
+      "max_drawdown_pct_after_cost": 0.05531623377420315,
+      "max_drawdown_duration_bars_after_cost": 302,
+      "ending_equity_usd": 120315.34789416194
+    },
+    {
+      "label": "out_of_sample",
+      "n_trades": 198,
+      "hit_rate_gross": 0.5252525252525253,
+      "hit_rate_after_cost": 0.5202020202020202,
+      "expectancy_r_gross": 0.07317269817900385,
+      "expectancy_r_after_cost": 0.05562077842541102,
+      "net_return_per_trade_usd_after_cost": 27.81038921270551,
+      "payoff_ratio_after_cost": 1.2001174016763911,
+      "avg_win_r_after_cost": 0.4619302117549294,
+      "avg_loss_r_after_cost": -0.3849041861318563,
+      "sharpe_365d_after_cost": 1.0944039748873913,
+      "calmar_after_cost": 2.5977975479414455,
+      "max_drawdown_pct_after_cost": 0.022224645453969478,
+      "max_drawdown_duration_bars_after_cost": 143,
+      "ending_equity_usd": 105506.45706411569
+    }
+  ],
+  "cost_sensitivity": [
+    {
+      "scenario": "zero_cost",
+      "cost_r": 0.0,
+      "n_trades": 1270,
+      "hit_rate": 0.5283464566929134,
+      "avg_win_r": 0.42104349315729533,
+      "avg_loss_r": -0.31753802155160066,
+      "payoff_ratio": 1.3259624504175316,
+      "expectancy_r": 0.07268890472372941
+    },
+    {
+      "scenario": "base_cost",
+      "cost_r": 0.03202464494691432,
+      "n_trades": 1270,
+      "hit_rate": 0.4905511811023622,
+      "avg_win_r": 0.4218842041064368,
+      "avg_loss_r": -0.3264146047013214,
+      "payoff_ratio": 1.2924795582981736,
+      "expectancy_r": 0.04066425977681509
+    },
+    {
+      "scenario": "2x_cost",
+      "cost_r": 0.06404928989382865,
+      "n_trades": 1270,
+      "hit_rate": 0.4566929133858268,
+      "avg_win_r": 0.4258309281145672,
+      "avg_loss_r": -0.34204293836590566,
+      "payoff_ratio": 1.2449633667309572,
+      "expectancy_r": 0.008639614829900888
+    }
+  ],
+  "walk_forward": {
+    "fold_values": [
+      0.06436818278493375,
+      0.011389445613243843,
+      0.013778210340771119,
+      0.02205597384257546,
+      0.06975346607159558,
+      0.06288229529936212
+    ],
+    "lag1_correlation": 0.18624990677190206,
+    "fold_edges": [
+      [
+        "2020-03-09 13:30:00+00:00",
+        "2021-04-21 14:00:00+00:00"
+      ],
+      [
+        "2021-04-23 18:00:00+00:00",
+        "2022-06-06 16:45:00+00:00"
+      ],
+      [
+        "2022-06-09 17:45:00+00:00",
+        "2023-08-03 14:00:00+00:00"
+      ],
+      [
+        "2023-08-04 09:45:00+00:00",
+        "2024-07-26 17:00:00+00:00"
+      ],
+      [
+        "2024-07-27 18:45:00+00:00",
+        "2025-08-17 02:45:00+00:00"
+      ],
+      [
+        "2025-08-17 13:45:00+00:00",
+        "2026-09-12 18:30:00+00:00"
+      ]
+    ]
+  },
+  "mae_mfe_distribution": [
+    {
+      "group": "winners",
+      "metric": "mae_r",
+      "n": 623,
+      "mean": 0.16152241198062947,
+      "median": 0.11389924101475486,
+      "p25": 0.04967497885804664,
+      "p75": 0.2170299974387259,
+      "p90": 0.3511513571598539
+    },
+    {
+      "group": "winners",
+      "metric": "mfe_r",
+      "n": 623,
+      "mean": 0.7050383176033107,
+      "median": 0.4191155572751723,
+      "p25": 0.23766816354380838,
+      "p75": 0.7633659037458873,
+      "p90": 1.529171071631885
+    },
+    {
+      "group": "losers",
+      "metric": "mae_r",
+      "n": 647,
+      "mean": 0.4610739964255306,
+      "median": 0.3710941337067549,
+      "p25": 0.22455626695302028,
+      "p75": 0.6329974464772145,
+      "p90": 0.9689090135034305
+    },
+    {
+      "group": "losers",
+      "metric": "mfe_r",
+      "n": 647,
+      "mean": 0.20100592816696825,
+      "median": 0.1341569169675205,
+      "p25": 0.05744141403321397,
+      "p75": 0.2619608546178472,
+      "p90": 0.49330521509272107
+    }
+  ]
+}
