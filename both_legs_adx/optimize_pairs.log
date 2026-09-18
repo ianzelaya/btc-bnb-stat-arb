@@ -1,0 +1,51 @@
+=== Stage 1: threshold grid ===
+  stage1 20/245 (14s elapsed)
+  stage1 40/245 (26s elapsed)
+  stage1 60/245 (39s elapsed)
+  stage1 80/245 (54s elapsed)
+  stage1 100/245 (68s elapsed)
+  stage1 120/245 (83s elapsed)
+  stage1 140/245 (95s elapsed)
+  stage1 160/245 (111s elapsed)
+  stage1 180/245 (126s elapsed)
+  stage1 200/245 (143s elapsed)
+  stage1 220/245 (163s elapsed)
+  stage1 240/245 (182s elapsed)
+stage1: 245 total, 245 with enough trades, 243 min_sharpe>0
+
+Top 5 stage1 threshold combos:
+      low_q  high_q  mid_q  n_trades  is_sharpe  oos_sharpe  min_sharpe
+228   0.30    0.92   0.55       902   0.792204    1.113466    0.792204
+229   0.30    0.92   0.60       902   0.754310    1.011359    0.754310
+226   0.30    0.92   0.45       903   0.756174    0.732243    0.732243
+227   0.30    0.92   0.50       902   0.723085    0.883446    0.723085
+88    0.05    0.92   0.55       512   0.710820    2.173903    0.710820
+
+=== Stage 2: full cross ===
+stage2: 2400 combos
+  stage2 200/2400 (202s elapsed)
+  stage2 400/2400 (441s elapsed)
+  stage2 600/2400 (645s elapsed)
+  stage2 800/2400 (871s elapsed)
+  stage2 1000/2400 (1100s elapsed)
+  stage2 1200/2400 (1289s elapsed)
+  stage2 1400/2400 (1514s elapsed)
+  stage2 1600/2400 (1691s elapsed)
+  stage2 1800/2400 (1906s elapsed)
+  stage2 2000/2400 (2103s elapsed)
+  stage2 2200/2400 (2232s elapsed)
+  stage2 2400/2400 (2377s elapsed)
+stage2: 2400 total, 2400 with enough trades, 1485 min_sharpe>0
+
+Top 10 stage2 combos:
+       low_q  high_q  mid_q  adx_threshold  max_loss_pct_of_cap  beta_window  pct_lookback  max_hold_bars  n_trades  n_is  n_oos  is_sharpe  oos_sharpe  min_sharpe
+311     0.3    0.92   0.55           30.0                 0.01          500          2500            300       682   594     88   1.152713    1.380085    1.152713
+1150    0.3    0.92   0.45           20.0                 0.05          500          2500            150       657   561     96   1.126276    1.931665    1.126276
+190     0.3    0.92   0.55           20.0                 0.05          500          2500            150       657   561     96   1.122385    1.907221    1.122385
+1751    0.3    0.92   0.50           30.0                 0.01          500          2500            300       682   594     88   1.119055    1.529888    1.119055
+791     0.3    0.92   0.60           30.0                 0.01          500          2500            300       682   594     88   1.129414    1.114793    1.114793
+1439    0.3    0.92   0.45           35.0                 0.05          500          2500            300       524   441     83   1.109301    2.168042    1.109301
+1630    0.3    0.92   0.50           20.0                 0.05          500          2500            150       657   561     96   1.095766    1.950711    1.095766
+1271    0.3    0.92   0.45           30.0                 0.01          500          2500            300       682   594     88   1.094729    1.505303    1.094729
+670     0.3    0.92   0.60           20.0                 0.05          500          2500            150       657   561     96   1.090554    1.853573    1.090554
+407     0.3    0.92   0.55           35.0                 0.01          500          2500            300       716   623     93   1.071821    1.202001    1.071821
